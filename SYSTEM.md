@@ -47,3 +47,4 @@ Skills are installed to a shared standard path used by all coding agent tools:
 - **playwright-cli** -- Browser automation with the `playwright-cli` CLI tool for web testing, screenshots, form filling, and data extraction. Synced from [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) with custom output file conventions.
 - **skill-creator** -- Create, iterate, and benchmark agent skills with eval-driven workflows. Synced from [anthropics/skills](https://github.com/anthropics/skills).
 - **doc-coauthoring** -- Structured workflow for co-authoring documentation, proposals, and technical specs. Synced from [anthropics/skills](https://github.com/anthropics/skills).
+- **githuman** -- Review AI-generated code before committing via GitHuman Docker instances managed by Just recipes (`sjust`/`ajust`).

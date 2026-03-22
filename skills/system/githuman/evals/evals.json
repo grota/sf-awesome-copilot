@@ -1,0 +1,44 @@
+{
+  "skill_name": "githuman",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just finished refactoring the authentication module — changed about 8 files. Before I commit, I want to review all the changes in a nice diff view. How do I do that on this Linux machine?",
+      "expected_output": "Should instruct the user to stage changes with git add, then use ajust githuman-start to launch GitHuman. Should mention ajust (not sjust) since the user said Linux. Should describe what the review interface offers.",
+      "files": [],
+      "expectations": [
+        "Response mentions using 'ajust' (not 'sjust') since the user specified Linux",
+        "Response includes the 'git add' step to stage changes before launching GitHuman",
+        "Response includes the 'ajust githuman-start' command to launch a review instance",
+        "Response mentions that GitHuman provides a browser-based diff review interface",
+        "Response does NOT suggest 'npx githuman serve' as the primary approach"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have 3 different GitHuman reviews running and I can't remember which one is for which project. How do I figure out what's running and clean up the ones I don't need?",
+      "expected_output": "Should guide the user to run sjust/ajust githuman-list to see all running instances with their directories and URLs. Then explain how to stop specific ones with githuman-stop or stop all at once.",
+      "files": [],
+      "expectations": [
+        "Response includes the 'githuman-list' command to show all running instances",
+        "Response explains that githuman-list shows container names, project directories, and URLs",
+        "Response includes the 'githuman-stop' command for stopping specific instances",
+        "Response mentions the option to stop all instances at once",
+        "Response uses sjust or ajust as the command prefix (not bare 'just')"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "My GitHuman instance started but the browser shows a connection error. The container seems to be running though. How do I debug this?",
+      "expected_output": "Should walk through troubleshooting: check container logs with githuman-logs, verify Docker networking, check if spark-http-proxy is running, mention the 60s readiness check, suggest stopping and restarting the instance.",
+      "files": [],
+      "expectations": [
+        "Response suggests checking container logs via 'githuman-logs'",
+        "Response mentions verifying Docker networking or container status",
+        "Response mentions the TLS certificate / spark-http-proxy as a possible cause",
+        "Response suggests stopping and restarting the instance as a recovery step",
+        "Response does NOT suggest reconfiguring Docker port mappings (the proxy handles routing)"
+      ]
+    }
+  ]
+}

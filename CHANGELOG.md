@@ -8,6 +8,12 @@ Changes are grouped by date.
 
 ## [Unreleased]
 
+## [2026-03-22]
+
+### Added
+
+- `githuman` skill: review AI-generated code before committing via GitHuman Docker instances managed by Just recipes (`sjust` on macOS, `ajust` on Linux). Covers all `githuman-*` commands (start, open, id, list, stop, logs, purge), the review workflow, and troubleshooting
+
 ## [2026-03-21]
 
 ### Changed

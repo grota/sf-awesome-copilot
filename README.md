@@ -22,6 +22,7 @@ Inspired by [github/awesome-copilot](https://github.com/github/awesome-copilot/t
 | **playwright-cli** | Browser automation -- web testing, screenshots, form filling, data extraction | `skills/system/playwright-cli/` |
 | **skill-creator** | Create, iterate, and benchmark agent skills with eval-driven workflows | `skills/system/skill-creator/` |
 | **doc-coauthoring** | Structured workflow for co-authoring docs, proposals, and technical specs | `skills/system/doc-coauthoring/` |
+| **githuman** | Review AI-generated code before committing via GitHuman Docker instances (sjust/ajust) | `skills/system/githuman/` |
 
 Skills are documents that provide context to Copilot on specific topics. Each skill contains:
 
